@@ -1,0 +1,27 @@
+package com.sahoo.java8;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class FindDuplicateElement {
+
+	public static void main(String[] args) {
+		List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
+        Set<Integer> set = new HashSet();
+        myList.stream()
+              .filter(n -> !set.add(n))
+              .forEach(System.out::println);
+        
+        List<String> fruitList = Arrays.asList("apple","banana","papaya","banana","mango");
+        Set<String> duplicate = new HashSet();
+        fruitList.stream()
+              .filter(n -> !duplicate.add(n))
+              .forEach(System.out::println);
+        
+	}
+
+}
