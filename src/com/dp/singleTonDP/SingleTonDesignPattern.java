@@ -9,13 +9,19 @@ public class SingleTonDesignPattern {
 		
 	}
 	
-	public static SingleTonDesignPattern getInstance()
-	{
-		if(instance == null)
-		{
-			instance = new SingleTonDesignPattern();
+	public static SingleTonDesignPattern getInstance() {
+		//1000
+		if (instance == null) {
+			synchronized (instance) {
+				if (instance== null) {
+					instance = new SingleTonDesignPattern();
+				}
+
+			}
+
 		}
 		return instance;
+
 	}
 	public String greeting(String user)
 	{

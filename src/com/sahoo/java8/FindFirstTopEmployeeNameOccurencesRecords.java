@@ -26,7 +26,7 @@ public class FindFirstTopEmployeeNameOccurencesRecords {
 	   List<Long> sortedValues = nameMapOcc.entrySet().stream().map(e->e.getValue()).sorted(Collections.reverseOrder()).collect(Collectors.toList());
 	   System.out.println(sortedValues);
 	   Map<Integer, Employee> firstTopEmployees = new LinkedHashMap<Integer, Employee>();
-	   int top = 2;
+	   int top = 1;
 	   for(Map.Entry entry : nameMapOcc.entrySet())
 	   {
 		   for(int i = 0; i<top; i++)

@@ -15,7 +15,7 @@ public class FindHighestOrLowestGivenArrayOrList
 	public static void main(String[] args) 
 	{
 		 List<Integer> list = List.of(23,12,34,56,78,234,67,99,87,432,123);
-		 List<Integer> s = list.stream().sorted((num1,num2)->(int)(num2-num1)).limit(2).skip(1).toList();
+		 List<Integer> s = list.stream().sorted((num1,num2)->(int)(num2-num1)).limit(1).toList();
 	     System.out.println(s);
 	     
 	     HashSet<Integer> hs = new HashSet<>();

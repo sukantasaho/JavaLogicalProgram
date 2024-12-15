@@ -11,7 +11,9 @@ public class CheckTheGivenNumberIsPrimeOrNot
     	for(int i = 1; i<=number; i++)
     	{
     		if(number%i==0)
+    		{
     			countDiv++;
+    		}
     	}
     	if(countDiv == 2)
     		isPrimeOrNot = true;

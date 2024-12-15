@@ -3,7 +3,7 @@ package com.sahoo.java7;
 public class CountSpecialChar {
 
 	public static void main(String[] args) {
-		 String str = "suksah@gmail#";
+		 String str = "suksah@gmail#&$";
 		 int count = 0;
 		 for(int i = 0; i<str.length(); i++)
 		 {

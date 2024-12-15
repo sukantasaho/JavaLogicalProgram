@@ -12,26 +12,26 @@ public class CalculatroApp {
     	{
     	    case '+':
     	    {
-    	    	return add(firstNum, secondNum);
+    	    	return (firstNum+secondNum);
     	    }
     	    case '-':
     	    {
-    	    	return sub(firstNum, secondNum);
+    	    	return (firstNum-secondNum);
     	    }
     	    case '*':
     	    {
-    	    	return mul(firstNum, secondNum);
+    	    	return (firstNum*secondNum);
     	    }
     	    case '/':
     	    {
-    	    	return div(firstNum, secondNum);
+    	    	return (firstNum/secondNum);
     	    }
     	    default:
     	    	throw new IllegalArgumentException("Unsupported Exception : "+operator);
     	}
     	
     }
-    private static double add(double firstNum, double secondNum)
+    /*private static double add(double firstNum, double secondNum)
     {
     	return (firstNum+secondNum);
     }
@@ -46,5 +46,5 @@ public class CalculatroApp {
     private static double div(double firstNum, double secondNum)
     {
     	return (firstNum/secondNum);
-    }
+    }*/
 }

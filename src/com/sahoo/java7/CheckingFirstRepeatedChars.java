@@ -23,7 +23,7 @@ public class CheckingFirstRepeatedChars {
 			}
 			if(!unique)
 			{
-				//firstRepeated = str.charAt(i);
+			    //firstRepeated = str.charAt(i);
 			   //repeatedChars.add(str.charAt(i));
 			   System.out.println(str.charAt(i));
 			   break;

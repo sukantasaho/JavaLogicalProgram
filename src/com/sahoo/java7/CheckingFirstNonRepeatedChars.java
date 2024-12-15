@@ -6,8 +6,7 @@ import java.util.Set;
 public class CheckingFirstNonRepeatedChars {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       
+		 
 		String str = "manFemale";
 		for(int i = 0; i<str.length(); i++)
 		{

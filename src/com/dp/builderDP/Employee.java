@@ -12,7 +12,7 @@ public class Employee {
 	private String occupation;//opt filed
 	private String[] qualifications;//opt filed
 	
-	public Employee(Builder builder)
+	private Employee(Builder builder)
 	{
 		this.firstName = builder.firstName;
 		this.lastName = builder.lastName;

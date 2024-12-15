@@ -1,6 +1,6 @@
 package com.sahoo.InterviewTest;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -8,10 +8,11 @@ import java.util.stream.Collectors;
 public class Test1 {
 
 	public static void main(String[] args) {
-		 
-		   String str = "Java concept of the day";
-	       Map<Character, Long> charFrequncy = str.chars().mapToObj(ch->(char)ch).filter(c->c!=' ').collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-	       System.out.println(charFrequncy);
-		 
+ 
+		  String str = "hi hello hi hello welcome";
+	      Map<String,Long> duplicateFrequncy = Arrays.asList(str.split(" ")).stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+	      System.out.println(duplicateFrequncy);
 	}
 }
+
+ 

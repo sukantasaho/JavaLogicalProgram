@@ -8,7 +8,7 @@ import java.util.Map;
 public class FindTop1LargestOccurences {
 
 	public static void main(String[] args) {
-		 Map<String,Integer> map = Map.of("sukanta",20,"manoj",30,"mukti",10,"raja",34);
+		 Map<String,Integer> map = Map.of("sukanta",20,"manoj",30,"mukti",10,"raja",34,"santosh",45);
 		 List<Integer> list = map.entrySet().stream().map(e->e.getValue()).sorted(Collections.reverseOrder()).toList();
          //System.out.println(list);
 		 Map<String, Integer> lhs = new LinkedHashMap<String, Integer>();

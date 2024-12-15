@@ -13,6 +13,8 @@ public class CheckPallindromeUsingStreamAndCorejava {
 	}
 	public  static boolean checkingPallindrome(String str)
 	{
+		 
+		 
 		String pallindrome = "";
 		 for(int i = str.length()-1; i>=0; i--)
 		 {
@@ -32,8 +34,8 @@ public class CheckPallindromeUsingStreamAndCorejava {
 		//System.out.println(str1);
 		System.out.println(str1.hashCode());
 		System.out.println(str.hashCode());
-
-		return  Stream.of(str1).collect(Collectors.joining("")).equals(str);
+		
+		return  str1.equals(str);
 	}
 
 }
